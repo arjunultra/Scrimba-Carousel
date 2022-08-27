@@ -11,6 +11,8 @@ body {
 }
 .carousel {
   max-width: 600px;
+  margin: 0 auto;
+  position: relative;
 }
 .carousel-img {
   max-width: 100%;
@@ -24,6 +26,9 @@ body {
 .btn-container {
   display: flex;
   justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  width: 100%;
 }
 .btn {
   padding: 5px 10px;
@@ -32,6 +37,15 @@ body {
   border: none;
   font-weight: 900;
   border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+#prev {
+  margin-left: 15px;
+}
+#next {
+  margin-right: 15px;
 }
 .carousel-item-visible {
   display: block;
